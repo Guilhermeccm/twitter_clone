@@ -1,11 +1,16 @@
 import React from 'react'
+import './SidebarOption.css';
 
-function SidebarOption() {
+
+
+
+function SidebarOption({text, Icon }) {
   return (
-    <div>
-        
+    <div className='sidebarOption'>
+      <Icon />
+      <h2>{text}</h2>
     </div>
-  )
+  );
 }
 
 export default SidebarOption
