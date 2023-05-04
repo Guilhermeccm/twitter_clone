@@ -11,15 +11,16 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { Button } from '@mui/base';
 
 
 
 function sidebar() {
   return (
     <div className='sidebar'>
-        {/*Twitter icon */}
-        <TwitterIcon/>
-        <SidebarOption Icon = {HomeIcon} text = "Home"/>
+        
+        <TwitterIcon className='sidebar__twitterIcon'/>
+        <SidebarOption active Icon = {HomeIcon} text = "Home"/>
         <SidebarOption Icon = {SearchIcon} text = "Explore"/>
         <SidebarOption Icon = {NotificationsNoneIcon} text = "Notifications"/>
         <SidebarOption Icon = {MailOutlineIcon} text = "Messages"/>
@@ -27,6 +28,8 @@ function sidebar() {
         <SidebarOption Icon = {ListAltIcon} text = "Lists"/>
         <SidebarOption Icon = {PermIdentityIcon} text = "Profile"/>
         <SidebarOption Icon = {MoreHorizIcon} text = "More"/>
+
+        <Button className='sidebar__tweet' fullWidth>Tweet</Button>
     </div>
   )
 }
