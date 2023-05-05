@@ -3,6 +3,9 @@
     border-right: 1px solid var(--twitter-background);
     min-width: fit-content;
     overflow-y: scroll; /*Sticks it to the screen when u scrool */
+    
+    height: 1150px;
+    border-radius: 10px;
 }
 
 .feed::-webkit-scrollbar {
